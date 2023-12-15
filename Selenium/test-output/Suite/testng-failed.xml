@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Testng.SoftAssert">
+        <methods>
+          <include name="openAppln"/>
+          <include name="closeAppln"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- Testng.SoftAssert -->
+      <class name="Testng.Assert">
+        <methods>
+          <include name="openAppln"/>
+          <include name="validLogin"/>
+          <include name="closeAppln"/>
+        </methods>
+      </class> <!-- Testng.Assert -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
